@@ -1,0 +1,14 @@
+---
+# This file is written in the Ansible language, as an example only. 
+# It is just an example of a list of tasks.
+
+
+- tasks:
+
+    - name: Download and install VirtualBox
+      get_url: url=https://www.virtualbox.org/wiki/Downloads
+
+    - name: Download and install Vagrant
+      get_url: url=https://www.vagrantup.com/
+
+# TODO 1. Figure out what OS you run and if you need to install these tools.
